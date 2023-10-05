@@ -25,7 +25,8 @@ class HomeViewModel extends ChangeNotifier {
         localizedReason: 'Autenticación biométrica requerida',
         options: const AuthenticationOptions(
           useErrorDialogs: true,
-          stickyAuth: true
+          stickyAuth: true,
+          biometricOnly: true
         )
       );
 

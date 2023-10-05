@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
                 onPressed: () async {
                   final isAuthenticated = await viewModel.authenticateWithBiometrics();
                   if (isAuthenticated) {
-                    print("Se ha podido autenticar");
+                    Navigator.pushNamed(context, '/camera');
                   }
                 },
                 child: Text('Autenticarse con Biométricos'),
